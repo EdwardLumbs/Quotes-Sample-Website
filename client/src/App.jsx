@@ -9,7 +9,7 @@ function App() {
   const fetchQuote = async () => {
     try {
       setLoading(true)
-      const res = await fetch('http://localhost:3000/getQuote')
+      const res = await fetch('/api/getQuote')
       const data = await res.json()
 
       if (data.success === false) {
