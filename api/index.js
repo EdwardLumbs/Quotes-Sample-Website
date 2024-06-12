@@ -11,7 +11,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.get('/getQuote', async (req, res) => {
+app.get('/api/getQuote', async (req, res) => {
     const apiKey = process.env.API_KEY
     try {
         const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=success',{
