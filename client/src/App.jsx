@@ -40,7 +40,7 @@ function App() {
       className='bg-cover font-quote h-screen flex flex-col items-center justify-center'
       style={{ backgroundImage: `url('/bg.jpg')` }}
     >
-      <div className='bg-white h-96 w-[500px] shadow-md rounded-lg m-3 p-4 flex flex-col items-center justify-center'>
+      <div className='bg-white h-96 sm:w-[500px] w-64 shadow-md rounded-lg m-3 p-4 flex flex-col items-center justify-center'>
         <div className='flex-grow flex items-center'>
           {
           error ?
@@ -61,8 +61,8 @@ function App() {
             </div>
             :
           quote ?
-            <div className='w-full'>
-              <div className='text-xl text-orange-900 font-semibold text-justify'>
+            <div className='w-full sm:text-xl'>
+              <div className='text-orange-900 font-semibold text-justify'>
                 {quote.quote}
               </div>
               <div className='mt-2 w-full text-right'>
